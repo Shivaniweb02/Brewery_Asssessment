@@ -1,0 +1,45 @@
+body{
+    /* background-image: url(''); */
+background-color: bisque;
+    height: 500px;
+    color: rgb(33, 33, 33);
+}
+.background {
+    background-image: url('https://static.wixstatic.com/media/9fc7e3_ecc0d356899b4e7f90d0ee29740a53a7~mv2.jpg/v1/fill/w_640,h_400,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/9fc7e3_ecc0d356899b4e7f90d0ee29740a53a7~mv2.jpg');
+    background-size: cover;
+    background-position: center;
+    /* filter: blur(5px) grayscale(70%); */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 1em;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}

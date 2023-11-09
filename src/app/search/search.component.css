@@ -1,0 +1,72 @@
+/* General styles */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Search bar styles */
+.search-bar {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#searchCategory {
+  margin: 10px;
+}
+
+/* Content styles */
+.content {
+  text-align: center;
+  margin: 50px auto;
+  width: 80%;
+  max-width: 1200px; /* Adjust maximum width as needed */
+  perspective: 1000px;
+}
+
+.result-card {
+  background: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.5s;
+}
+
+.result-card:hover {
+  transform: rotateX(5deg) rotateY(5deg);
+}
+
+/* Additional styles for your other content */
+/* Add your custom styles for the other elements in the content section */
+
+/* Example styles for specific elements */
+.result-card .brewery-info {
+  text-align: left;
+  font-size: 18px;
+}
+
+.result-card .brewery-name {
+  font-weight: bold;
+  font-size: 22px;
+  color: #333;
+}
+
+.result-card .brewery-address {
+  font-size: 14px;
+  color: #555;
+}
+
+.result-card .details {
+  text-align: right;
+  font-size: 14px;
+  color: #777;
+}
+
+/* Add your other custom styles as required for various elements in the content */

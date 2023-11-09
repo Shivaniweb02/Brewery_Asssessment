@@ -1,0 +1,32 @@
+<div class="search-container">
+  <div class="search-container-inner">
+      <label for="searchCategory">Select a search category:</label>
+      <select id="searchCategory" [(ngModel)]="selectedCategory">
+          <option value="by_name">By Name</option>
+          <option value="by_city">By City</option>
+          <option value="by_type">By Type</option>
+      </select>
+      <input *ngIf="selectedCategory === 'by_name'" type="text" [(ngModel)]="name" name="name" placeholder="Enter name">
+      <input *ngIf="selectedCategory === 'by_city'" type="text" [(ngModel)]="city" name="city" placeholder="Enter city">
+      <input *ngIf="selectedCategory === 'by_type'" type="text" [(ngModel)]="type" name="type" placeholder="Enter type">
+      <button (click)="search()">Search</button>
+  </div>
+</div>
+
+<div class="results-container" *ngIf="searchResults && searchResults.length">
+  <h2>Search Results</h2>
+  <div class="result-cards">
+      <div *ngFor="let result of searchResults" class="result-card">
+          <div class="brewery-info">
+              <div class="brewery-name">{{ result.name }}</div>
+              <div class="brewery-address">{{ result.address_1 }}, {{ result.city }}, {{ result.state_province }}</div>
+          </div>
+          <div class="details">
+              <div><i class="fas fa-phone-alt"></i> {{ result.website_url }}</div>
+              <div><i class="fas fa-phone-alt"></i> {{ result.phone }}</div>
+              <div><strong>Current Rating:</strong> {{ result.currentRating }}</div>
+              <button (click)="navigateToFeedbackPage(result)">Check out!</button>
+          </div>
+      </div>
+  </div>
+</div>

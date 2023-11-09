@@ -1,0 +1,66 @@
+/* Styles for details container */
+.details-container {
+    text-align: center;
+    padding: 20px;
+    background: #f7f7f7;
+    margin-bottom: 20px;
+  }
+  
+  .brewery-name {
+    font-weight: bold;
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .brewery-details {
+    text-align: left;
+  }
+  
+  /* Styles for feedback form */
+  .feedback-form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .feedback-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+  }
+  
+  input[type="email"],
+  textarea,
+  input[type="number"],
+  button {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+  
+  button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  

@@ -1,0 +1,17 @@
+<div class="register">
+    <!-- Your registration form goes here -->
+    <h2>Register</h2>
+    <!-- Register form fields -->
+    <!-- Example: -->
+    <form (ngSubmit)="register()" >
+      <input type="text" placeholder="Username" name="name" [(ngModel)]="inData.name">
+      <input type="text" placeholder="Phone Number" name="number" [(ngModel)]="inData.number">
+      <input type="email" placeholder="Email" name="email" [(ngModel)]="inData.email">
+     
+      <input type="password" placeholder="Password" name="newPassword" [(ngModel)]="inData.password">
+  
+      <input type="text" placeholder="Address" name="address" [(ngModel)]="inData.address">
+      <button type="submit">Register</button>
+    </form>
+  </div>
+<!-- <p>register works!</p> -->
